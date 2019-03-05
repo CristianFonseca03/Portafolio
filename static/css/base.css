@@ -1,0 +1,162 @@
+@media screen and (min-width: 1088px) {
+  .navbar-item img {
+    max-height: 3rem;
+    padding-right: 10px;
+  }
+}
+
+.background {
+  background-image: url("../img/fondo.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: 150px;
+}
+
+.is-secundary {
+  background: #7c7c7c;
+}
+
+.bd-has-text-rss {
+  color: #f26522;
+}
+
+.has-text-star {
+  color: #ffd257;
+}
+.is-primary {
+  background-color: purple;
+}
+
+.is-info {
+  background-color: cornflowerblue;
+}
+
+.section.is-primary .title {
+  color: #fff;
+}
+
+.section.is-primary .subtitle {
+  color: #fff;
+}
+
+.section.skills {
+  margin-top: -150px;
+  padding-bottom: 5rem;
+}
+
+.section.projects {
+  padding-top: 2.5rem;
+}
+
+.section.is-long {
+  padding-bottom: 12rem;
+}
+
+@media screen and (min-width: 769px) {
+  .section.is-long {
+    padding-bottom: 10rem;
+  }
+}
+
+@media screen and (min-width: 1088px) {
+  .section.is-long {
+    padding-bottom: 14rem;
+  }
+}
+
+.icon-padding {
+  padding: 30px;
+}
+
+.ul-tools {
+  list-style: none !important;
+}
+
+.projects .project-grid {
+  padding: 2rem 0 4rem;
+}
+
+.projects .project-grid figure {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.projects .project-grid figure figcaption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0rem 3rem;
+  color: white;
+  z-index: 1;
+}
+
+.projects .project-grid .overlay,
+.projects .project-grid figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.45s ease-in-out;
+}
+
+.projects .project-grid figure:hover .overlay,
+.projects .project-grid figure:hover figcaption {
+  opacity: 1;
+}
+
+.avatar {
+  height: 311px;
+  border-radius: 50%;
+}
+
+.projects .project-grid figure figcaption h1.title {
+  color: white;
+  margin-bottom: 1.8rem;
+  font-weight: 500;
+}
+
+.projects .project-grid .overlay {
+  background-color: #293347;
+}
+
+.section.projects {
+  border-top: 1px solid #e6ecf8;
+  padding-bottom: 0;
+}
+
+footer .social-icons a.button {
+  background-color: transparent;
+  color: white;
+  border-radius: 100%;
+  margin: 0 0.2rem;
+  height: 47px;
+  width: 47px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+footer .social-icons a.button:hover {
+  background: white;
+  color: #f34809;
+  border: 2px solid white;
+}
+
+a,
+.button {
+  transition: all 0.2s ease-in-out;
+}
+
+.padding-40 {
+  padding: 40px;
+}
+
+.is-dark {
+  background-color: #363636;
+  color: #f5f5f5;
+}
+
+.color-secundary {
+  background-color: dimgrey;
+}
