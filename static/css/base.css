@@ -16,6 +16,7 @@
 .has-text-star {
   color: #ffd257;
 }
+
 .is-primary {
   background-color: purple;
 }
@@ -160,7 +161,9 @@ a,
     padding-right: 10px;
   }
 }
-@media handheld, only screen and (max-width: 767px) {
+
+@media handheld,
+only screen and (max-width: 767px) {
   .background {
     background-position-y: 300px;
   }
