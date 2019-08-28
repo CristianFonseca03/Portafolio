@@ -23,5 +23,5 @@ $(function () {
     var ct = new Date();
     setInterval('alter_date()', 150);
     $("#carga").html(ct.getHours() + ":" + ct.getMinutes() + ":" + ct.getSeconds());
-    setInterval("alter_time_elapsed(ct.getHours(), ct.getMinutes(), ct.getSeconds())", 150);
+    setInterval('alter_time_elapsed(11, 30, 00)', 150);
 });
