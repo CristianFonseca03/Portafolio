@@ -14,10 +14,27 @@ function alter_time_elapsed() {
     $("#tt_carga").html(formatted);
 };
 
+function alter_time_to_birth_date() {
+    var birth_date = moment([1998, 8, 27, 19, 0, 0]);
+    var now = moment();
+    var years = now.diff(birth_date, 'years');
+    birth_date.add(years, 'years');
+    var days = now.diff(birth_date, 'days');
+    birth_date.add(days, 'days');
+    var hours = now.diff(birth_date, 'hours');
+    birth_date.add(hours, 'hours');
+    var minutes = now.diff(birth_date, 'minutes');
+    birth_date.add(minutes, 'minutes');
+    var seconds = now.diff(birth_date, 'seconds');
+    $("#relative_time").html(years + " años " + days + " días " + hours + " horas " + minutes + " minutos " + seconds + " segundos");
+}
+
 $(function () {
+    var birth_date = moment([1998, 8, 27, 19, 0, 0]);
     moment.locale('es');
     setInterval('alter_date()', 100);
     $("#carga").html(get_date());
-    console.log(moment([2010, 1, 14, 15, 25, 50]).format('LLLL'));
     setInterval('alter_time_elapsed()', 1000);
+    $("#birth_date").html(birth_date.format('LL h:mm A'));
+    setInterval('alter_time_to_birth_date()', 1000);
 });
