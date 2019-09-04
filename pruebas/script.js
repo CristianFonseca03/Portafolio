@@ -32,7 +32,7 @@ function alter_time_to_birth_date() {
 $(function () {
     moment.locale('es');
     var birth_date = moment([1998, 8, 27, 19, 0, 0]);
-    setInterval('alter_date()', 100);
+    setInterval('alter_date()', 1000);
     $("#carga").html(get_date());
     setInterval('alter_time_elapsed()', 1000);
     $("#birth_date").html(birth_date.format('LL h:mm A'));
